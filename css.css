@@ -1,0 +1,52 @@
+body {
+  background-color: lightyellow;/*this makes the whole body have a light blue background*/
+}
+
+h1{
+  color: red ;
+  background-color: lightblue;
+text-align: center;
+}
+
+button{
+ background-color: red;
+ border-style:hidden;
+ color: white;
+}
+
+p{
+font-size:20px;
+margin-left: 300px;
+margin-right: 300px;
+margin-top: 10px;
+color:purple;
+text-align: center;
+}
+
+a{
+text-align: center;
+}
+
+
+#para{
+color: white;
+text-align: center;
+}
+
+#rightcolumn{
+float: right; margin-left: 200px; margin-bottom: 200px; margin-right: 2px;
+}
+
+h3{
+text-align: center;
+}
+
+.centerdiv{
+text-align:center;
+}
+
+#mini{
+text-align:center;
+font-size: 15px;
+}
+

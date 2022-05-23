@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang ="en-US">
 <head>
-<title> simple webpage </title>
+<link rel="stylesheet" href="css.css">
+<title> Matt's webpage </title>
 </head>
 <body>
 
-<p style="color:purple;">This is important</p>
+<h1>Welcome to my website!</h1>
+<h3>About Me:</h3>
 <p>
-<a href = 'page 2.html'> page 2 </a> <br>
-<a href = 'page 3.html'> page 3 </a> <br>
+
+Hello! This is my first ever website built with html and css. My name is Matthew Tran and I am currently a student at the University of Massachusetts - Lowell studying computer science.
+I am from the city of Chico, California and came up to Massachusetts for college. My hobbies include fishing and skateboarding.
+One fun fact about me is I am left handed. Below you can find my resume and linked in.
+
 </p>
-<b> this is bold </b> <br />
-this is for webpage content <br>
 
-<a href="https://www.google.com" target_= "blank" > this link goes to google </a> <br>
+<!--<p> 
+<a href = 'page 2.html'> page 2 <a/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = 'page 3.html'> page 3 <a/> <br>
+</p>
+-->
+<div class="centerdiv">
+<a href='My Resume.pdf' target="_blank">Resume<a/> <br /> <br />
+</div>
+<div class="centerdiv">
+<a href="https://www.linkedin.com/in/matthew-tran-162b271b7/" target= "_blank" > Click this for my linked in!!! <a/> <br>
+</div>
+<p id="para"> this is a paragraph with an ID</p> <br />
 
-<a href="https://www.google.com" target_= "new" > this link goes to google  / everchanging </a> <br>
+<div class="centerdiv">
+<button onclick="document.getElementById('myImage').src='matt.jpg'">web2 matt</button>
 
+<img id="myImage" src="matt.jpg" style="width:300px" >
 
+<button onclick="document.getElementById('myImage').src='web3matt.gif'">web3 matt</button>
+</div>
+<br />
+<p>Another hobby of mine is collecting nfts. If you click the red button to the right of my photo it would
+    bring up a picture of my favorite online identity. The left button would bring back a picture of me!</p>
 
-
+<p id="mini">
+Contact me: <br />
+    Phone: 530-518-0733 <br />
+    Email: Matthewtran2468@yahoo.com <br />
+</p>
 </body>
 
 </html>
