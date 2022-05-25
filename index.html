@@ -7,12 +7,18 @@
 <body>
 
 <h1>Welcome to my website!</h1>
-<h3>About Me:</h3>
+<ul>
+    <li><a href="index.html#About">About Me</a></li>
+    <li><a href="index.html#hobbies">Hobbies</a></li>
+    <li><a href="index.html#favmovies">Favorite Movies</a></li>
+</ul>
+<h3 id="About">About Me:</h3>
 <p>
 
-Hello! This is my first ever website built with html and css. My name is Matthew Tran and I am currently a student at the University of Massachusetts - Lowell studying computer science.
-I am from the city of Chico, California and came up to Massachusetts for college. My hobbies include fishing and skateboarding.
-One fun fact about me is I am left handed. Below you can find my resume and linked in.
+Hello! This is my first ever website built with html and css. My name is Matthew Tran and I am currently a student at the University of Massachusetts - Lowell, living in North Chelmsford.
+I am from the city of Chico, California and came up to Massachusetts for college, where most of my family is from.
+I am currently studying for a bachelor's degree in computer science and I am about to be in my senior year.
+Below are some links to my Resume and Linkedin, respectively.
 
 </p>
 
@@ -28,18 +34,115 @@ One fun fact about me is I am left handed. Below you can find my resume and link
 <div class="centerdiv">
 <a href="https://www.linkedin.com/in/matthew-tran-162b271b7/" target= "_blank" > Click this for my linked in!!! <a/> <br>
 </div>
-<p id="para"> this is a paragraph with an ID</p> <br />
-
 <div class="centerdiv">
 <button onclick="document.getElementById('myImage').src='matt.jpg'">web2 matt</button>
 
-<img id="myImage" src="matt.jpg" style="width:300px" >
+<img id="myImage" src="matt.jpg">
 
 <button onclick="document.getElementById('myImage').src='web3matt.gif'">web3 matt</button>
 </div>
 <br />
+<h3 id="hobbies">My Hobbies</h3>
 <p>Another hobby of mine is collecting nfts. If you click the red button to the right of my photo it would
-    bring up a picture of my favorite online identity. The left button would bring back a picture of me!</p>
+    bring up a picture of my favorite online identity. The left button would bring back a picture of me! Collecting NFT's
+    started out as an investment opportunity for me and now I've been inspired by their decentralized ideas which has led me 
+    to taking this class.</p>
+
+<h4>Fishing</h4>
+<p>Another hobby of mine is fishing. Fishing is something I got into 4 years ago while in California when I would go up
+    in the mountains to fish for trout in the local streams and rivers. Today I mainly fish for bass in the local lakes and 
+    ponds around massachusetts.</p>
+
+<div class="centerdiv">
+    <img src="matttrout.jpg" />
+    <img src="mattbass.jpg" />
+</div>
+
+<p id="minibox">The picure on the left was taken in Deerk Creek, California with me holding a pike minnow.
+    The picture on the right is of my largest bass to date caught at Silver Lake in Tewksbury.</p>
+
+<h4>Skating</h4>
+
+<p>Another hobby of mine is skateboarding. I have been skateboarding on and off since highschool ever since I was 
+    introducted to it by my friend Riley in sophomore year. The video below is a video of me performing a 
+    kickflip in flip flops. </p>
+
+<center><video controls muted><source src="mattskate.mov" type="video/mp4" /></video> </center> 
+<br />
+<h3 id="favmovies">My Favorite Movies</h3>
+<p>Along with fishing and skateboarding, I also enjoy watching movies in my free time. Below are some of the most
+    recent movies that I have watched along with my personal ratings along with them.</p>
+<div class="moviebox">
+    <div>
+        <img src="SPIDERMAN.jpg" />
+    </div>
+    <div>
+        <img src="EEAAO.jpg" />
+    </div>
+    <div>
+        <img src="ENCANTO.jpeg" />
+    </div>
+    <div>
+        <img src="ADAM.jpg" />
+    </div>
+</div>
+
+<center>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Story</th>
+            <th>Message/impact</th>
+            <th>Directing</th>
+            <th>Expected Rating</th>
+            
+        </tr>
+        <tr>
+            <th>Spiderman: No Way Home</th>
+            <th>7.8</th>
+            <th>8</th>
+            <th>5</th>
+            <th>7</th>
+            <th>9</th>
+
+        </tr>
+        <tr>
+            <th>Everything Everywhere All At Once</th>
+            <th>10</th>
+            <th>9.5</th>
+            <th>10</th>
+            <th>9</th>
+            <th>7</th>
+        </tr>
+        <tr>
+            <th>Encanto</th>
+            <th>7</th>
+            <th>5</th>
+            <th>8</th>
+            <th>N/A</th>
+            <th>10</th>
+        </tr>
+        <tr>
+            <th>The Adam Project</th>
+            <th>8.5</th>
+            <th>9</th>
+            <th>9</th>
+            <th>8</th>
+            <th>6</th>
+        </tr>
+    </table>
+</center>
+
+<p>
+    These ratings for the movies are completely personal and just from my own opinion. Spiderman: No Way home was a great
+    movie for what it is, but was not that amazing outside of that superhero genre. Everything Everywhere All At Once was like 
+    a dark horse who came out of nowhere and blew my expectations out of the water with its amazing cinetography, story and performance
+    by the actors. Disney's Encanto was a great movie as well although I expected more story out of it and it felt sort of rushed.
+    The Adam Project was recommended to me by my father and my computer architecture teacher, although I had low expectations as it was a 
+    Netflix film and recommended by my Father who watches documentaries all day. The Adam Project was entertaining to watch and 
+    was a good laugh with a story that was all over the place in a good way.
+</p>
 
 <p id="mini">
 Contact me: <br />
