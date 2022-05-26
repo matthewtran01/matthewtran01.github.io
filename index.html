@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<!--this is a comment-->
+<!--File: index.html
+    Gui Assignment: Creating Your First Web Page
+    Matthew Tran, UMass Lowell Computer Science matthew_tran@student.uml.edu
+    Copyright (c) 2022 by Matthew All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author. Updated May 25,20222-->
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="Css/styles.css">
     <title> Matt's webpage </title>
 </head>
 <body>
-<h1>Welcome to my website!</h1> <!--This is my header of the website that welcomes people-->
-    <ul> <!--This unordered lists contains links that will take the user to certain parts of the page-->
-        <li><a href="index.html#About">About Me</a></li>
-        <li><a href="index.html#hobbies">Hobbies</a></li>
-        <li><a href="index.html#favmovies">Favorite Movies</a></li>
-    </ul>
+    <div class="centerdivfixed">
+        <h1>Welcome to my website!</h1> <!--This is my header of the website that welcomes people-->
+
+        <ul>
+            <!--This unordered lists contains links that will take the user to certain parts of the page-->
+            <li><a href="index.html#About">About Me</a></li>
+            <li><a href="index.html#hobbies">Hobbies</a></li>
+            <li><a href="index.html#favmovies">Favorite Movies</a></li>
+        </ul>
+    </div>
+
     <h3 id="About">About Me:</h3> <!--First section of the page, an about me page-->
     <p>
 
@@ -22,18 +31,20 @@
 
     </p>
 
-    <div class="centerdiv"> <!--container to hold and center the links-->
-        <a href='Resume.pdf' target="_blank"> Resume </a> <br /> <br />
+    <div class="centerdiv">
+        <!--container to hold and center the links-->
+        <a href='Files/Resume.pdf' target="_blank"> Resume </a> <br /> <br />
     </div>
     <div class="centerdiv">
         <a href="https://www.linkedin.com/in/matthew-tran-162b271b7/" target="_blank"> Click this for my linked in!!! </a> <br>
     </div>
-    <div class="centerdiv"> <!--container to hold 2 buttons and an image that changes based on the click of a button-->
-        <button onclick="document.getElementById('myImage').src='matt.jpg'">web2 matt</button>
+    <div class="centerdiv">
+        <!--container to hold 2 buttons and an image that changes based on the click of a button-->
+        <button onclick="document.getElementById('myImage').src='Images/matt.jpg'">web2 matt</button>
 
-        <img id="myImage" src="matt.jpg" alt="picture of me or my nft">
+        <img id="myImage" src="Images/matt.jpg" alt="picture of me or my nft">
 
-        <button onclick="document.getElementById('myImage').src='web3matt.gif'">web3 matt</button>
+        <button onclick="document.getElementById('myImage').src='Images/web3matt.gif'">web3 matt</button>
     </div>
     <br />
     <h3 id="hobbies">My Hobbies</h3> <!--next navigational checkpoint-->
@@ -51,12 +62,14 @@
         ponds around massachusetts.
     </p>
 
-    <div class="centerdiv"> <!--container to hold 2 pictures -->
-        <img src="matttrout.jpg" alt="matt holding a pike minnow" />
-        <img src="mattbass.jpg" alt="matt holding a big bass"/>
+    <div class="centerdiv">
+        <!--container to hold 2 pictures -->
+        <img src="Images/matttrout.jpg" alt="matt holding a pike minnow" />
+        <img src="Images/mattbass.jpg" alt="matt holding a big bass" />
     </div>
 
-    <p id="minibox"> <!--id of a minibox to hold a paragraph that has borders -->
+    <p id="minibox">
+        <!--id of a minibox to hold a paragraph that has borders -->
         The picure on the left was taken in Deerk Creek, California with me holding a pike minnow.
         The picture on the right is of my largest bass to date caught at Silver Lake in Tewksbury.
     </p>
@@ -69,29 +82,31 @@
         kickflip in flip flops.
     </p>
 
-    <div class="centerdiv"><video controls muted><source src="mattskate.mov" type="video/mp4"/></video></div>  <!--video added of me skating-->
+    <div class="centerdiv"><video controls muted><source src="Videos/mattskate.mov" type="video/mp4" /></video></div>  <!--video added of me skating-->
     <br />
     <h3 id="favmovies">My Favorite Movies</h3>
     <p>
         Along with fishing and skateboarding, I also enjoy watching movies in my free time. Below are some of the most
         recent movies that I have watched along with my personal ratings along with them.
     </p>
-    <div class="moviebox"> <!--container golding 4 movie poster images-->
+    <div class="moviebox">
+        <!--container golding 4 movie poster images-->
         <div>
-            <img src="SPIDERMAN.jpg" alt="spiderman no way home" />
+            <img src="Images/SPIDERMAN.jpg" alt="spiderman no way home" />
         </div>
         <div>
-            <img src="EEAAO.jpg" alt="everything everywhere all at once"/>
+            <img src="Images/EEAAO.jpg" alt="everything everywhere all at once" />
         </div>
         <div>
-            <img src="ENCANTO.jpeg" alt="disney's encanto" />
+            <img src="Images/ENCANTO.jpeg" alt="disney's encanto" />
         </div>
         <div>
-            <img src="ADAM.jpg" alt="the adam project" />
+            <img src="Images/ADAM.jpg" alt="the adam project" />
         </div>
     </div>
 
-    <div class="centertab"> <!--table holding my ratings of movies mentioned above-->
+    <div class="centertab">
+        <!--table holding my ratings of movies mentioned above-->
         <table>
             <tr>
                 <th>Name</th>
@@ -148,7 +163,8 @@
         was a good laugh with a story that was all over the place in a good way.
     </p>
 
-    <p id="mini"> <!--mini box for my contact info-->
+    <p id="mini">
+        <!--mini box for my contact info-->
         Contact me: <br />
         Phone: 530-518-0733 <br />
         Email: Matthewtran2468@yahoo.com <br />
