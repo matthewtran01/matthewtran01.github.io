@@ -1,21 +1,22 @@
 body {
-  background-color: lightyellow;/*this makes the whole body have a light blue background*/
+  background-color: lightyellow;/*this makes the whole body have a light yellow background*/
 }
 
-h1{
-  color: red ;
-  background-color: lightblue;
-  text-align: center;
-
+h1 { /*all tags of h1 will be red and light blue background */
+    color: darksalmon;
+    background-color: lightblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-button{
+button{ /*button adjustment with css to to make it nice and red*/
  background-color: red;
  border-style:hidden;
  color: white;
 }
 
-p{
+p{ /*paragraph adjustment to make it centered and control margins. used very often in HTML code*/
 font-size:20px;
 margin-left: 300px;
 margin-right: 300px;
@@ -24,69 +25,67 @@ color:purple;
 text-align: center;
 }
 
-a{
+a{ /*center links*/
 text-align: center;
 color:black;
 }
 
 
-#para{
-color: white;
+h3{ /*center h3 tag*/
 text-align: center;
 }
 
-#rightcolumn{
-float: right; margin-left: 200px; margin-bottom: 200px; margin-right: 2px;
-}
-
-h3{
-text-align: center;
-}
-
-.centerdiv{
+.centerdiv{ /*little container divider to put tags in that centers the tags and gives a little cushion on the bottom*/
 padding-bottom:15px;
 text-align:center;
 }
 
-#mini{
+#mini{ /*used to make text smaller*/
 text-align:center;
 font-size: 15px;
 color:black;
 }
 
-ul{
-    text-align:center;
-    padding:10px;
-    color:black;
-    font-size:20px;
-    background-color:blueviolet;
+ul { /*unordered list, aligned and given different text*/
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    color: black;
+    font-size: 20px;
+    background-color: cornflowerblue;
 }
-li{
+li{ /*makes all values in the unordered list display in a line*/
     display:inline;
     padding:10px;
     color:black;
 }
-h4{
-    color:blue
+h4{ /*header 4 changed colors*/
+    color:blue;
+   text-align:center;
 }
-img {
+img { /*size for images*/
     width:300px;
     padding:10px;
 }
 
-#minibox{
+#minibox{ /*small box used to put small text in with borders*/
     border: solid black 2px;
     margin-left:400px;
     margin-right: 400px;
     font-size:17px;
     color:black;
 }
-.moviebox{
+.moviebox{ /*container for movie images*/
     display:flex;
 }
-.moviebox div{
+.moviebox div{ /*container for each movie image */
     flex:1;
 }
-table,th,tr{
+table,th,tr{ /*solid black borders to make the table have outlines*/
     border: solid black 1px;
+}
+
+table { /*centers table differently because its not text*/
+    margin-right:auto;
+    margin-left: auto;
 }
