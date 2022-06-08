@@ -1,19 +1,28 @@
+/*
+Assignment: Editing pacific.css to make Pacific Trails Resort website
+Name:Matthew Tran Email:Matthew_tran@student.uml.edu
+Copyright (c) 2022 by Matthew Tran. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Last edited by Matthew on 6/8/2022 at 1:20AM
+*/
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
+/*background of entire "body" of page*/
 body {
-    color: #666666;
+    color: #00569f;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     background-image: url("ptrbackground.jpg");
     background-repeat: repeat-x;
 }
+/*nav container with width and position*/
 nav{
 	width:200px;
 	float: left;
 }
 
-/* nav text size and without bullet points */
+/* nav text size with no bullet points */
 nav ul {
 	font-size: 1.2em;
 	list-style: none;
@@ -23,51 +32,60 @@ nav a:link {
     font-weight: bolder;
     color:black;
 }
+/*nav a link attributes for base link, when hovered, and when visited*/
+
 nav a:visited {
 	color: #344873;
 }
 nav a:hover {
 	color: #FFFFFF;
 }
+/*changes bullets of the unorderd list to marker.gif bullets*/
 #content ul {
     list-style: url(marker.gif);
 }
+/*content and wrapper that are id selectors that helps adjust margins and colors for certain dividers*/
 #content {
     margin-left: 200px;
     background-color: white;
-    padding: 16px 32px;
+    padding: 20px 30px;
 }
 #wrapper {
     background-color: #abdbe3;
-    min-width: 580px;
+    min-width: 600px;
     width: 80%;
     margin: 0 auto;
 }
+/*header 1 that contains title and sunset image*/
 h1 {
     margin-bottom: 0;
     padding: 10px;
     background-position: right;
     background-image: url("sunset.jpg");
     background-repeat: no-repeat;
-    background-color: #040439;
+    background-color: #000033;
     color: white;
 }
+/*header 2 changes color and margins */
 h2 {
     color: #3399CC;
     margin-top: 10px;
 }
+/*alter header 1 and header 2 at the same time*/
 h1,
 h2 {
     font-family: Georgia, "Times New Roman", serif;
     font-weight:bolder;
 }
-}
+/*make contact id a smaller size*/
 #contact {
     font-size: 90%;
 }
+
 dt {
 	color: #000033;
 }
+/*footer that makes smaller text and italics in a different position*/
 footer {
     font-family: Georgia, "Times New Roman", serif;
     margin-left: 200px;
@@ -76,12 +94,12 @@ footer {
     font-size:small;
     background-color:white;
 }
-
+/*change the text styles whenever the company name is mentioned*/
 span {
     color: #388390;
     font-weight: bold;
 }
-
+/*alter image positioning*/
 img {
     float: left;
     margin-right: 30px;
