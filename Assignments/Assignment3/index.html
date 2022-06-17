@@ -1,0 +1,59 @@
+<!--
+Name: Matthew Tran
+Assignment: creating a dynamic multiplication table with javascript
+date: 6/16/2022
+ This webpage was designed as a personal bio which highlights my hobbies and my life
+    Matthew Tran, UMass Lowell Computer Science matthew_tran@student.uml.edu
+    Copyright (c) 2022 by Matthew All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author. Updated June 16,2022
+-->
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <link rel="stylesheet" href="css/cs01.css">
+        <title>Multiplication Table</title>
+    </head>
+    <body>
+        <!-- divider for forms and button-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form">
+            <h1>Matt's Hw5: Multiplication Table with Javascipt!</h1>
+            <form action="/action_page.php">
+
+              <!-- get inputs for min and max values for rows and columns, respectably -->
+              <p> Please enter a number between -50 and 50 in the text tables. </p> 
+              <fieldset>
+              <legend>Please enter the minimum and maximum value of the row:</legend>
+              Start:&nbsp;<input type="text" id="rowStart" />
+                  <span class="rowStartText"></span>
+                  <br>
+              End:&nbsp;<input type="text" id="rowEnd" />
+                  <span class="rowEndText"></span>
+                  <br>
+              </fieldset>
+              <br>
+              <fieldset>
+              <legend>Please enter the minimum and maximum value of the column:</legend>
+              Start:&nbsp;<input type="text" id="colStart" />
+                  <span class="colStartText"></span>
+                  <br>
+              End:&nbsp;<input type="text" id="colEnd" />
+                  <span class="colEndText"></span>
+                  <br>
+              </fieldset>
+              <br>
+
+            </form>
+            <!-- Button -->
+            <button id="center" type="button" onclick="createTable()">Create Multiplication Table</button>
+          </div>
+        </div>
+        </div>
+        <br> <br>
+        <div id="table">
+        </div>
+        <script src="javascript/js01.js">
+        </script>
+    </body>
+</html>
