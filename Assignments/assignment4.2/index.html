@@ -1,0 +1,81 @@
+<!--
+Name: Matthew Tran
+Assignment: creating a dynamic multiplication table with javascript
+date: 6/16/2022
+ This webpage was designed as a personal bio which highlights my hobbies and my life
+    Matthew Tran, UMass Lowell Computer Science matthew_tran@student.uml.edu
+    Copyright (c) 2022 by Matthew All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author. Updated June 16,2022
+-->
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="css/cs01.css">
+        <title>Multiplication Table</title>
+    </head>
+    <body>
+        <!-- divider for forms and button-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form">
+            <h1>Matt's Hw5: Multiplication Table with Javascipt!</h1>
+            <form id="sForm">
+
+              <!-- get inputs for min and max values for rows and columns, respectably -->
+              <p> Please enter a number between -50 and 50 in the text tables. </p> 
+              <fieldset>
+              <legend>Please enter the minimum and maximum value of the row:</legend>
+              Start:&nbsp;<input type="text" id="rowStart" name="rowStart" />
+              <br>
+              <div id="horizontalStart" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+                  <span class="rowStartText"></span>
+                  <br>
+              End:&nbsp;<input type="text" id="rowEnd" name="rowEnd" />
+              <br>
+              <div id="horizontalEnd" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+                  <span class="rowEndText"></span>
+                  <br>
+              </fieldset>
+              <br>
+              <fieldset>
+              <legend>Please enter the minimum and maximum value of the column:</legend>
+              Start:&nbsp;<input type="text" id="colStart" name="colStart" />
+              <br>
+              <div id="verticalStart" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+                  <span class="colStartText"></span>
+                  <br>
+              End:&nbsp;<input type="text" id="colEnd" name="colEnd" />
+              <br>
+              <div id="verticalEnd" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+                  <span class="colEndText"></span>
+                  <br>
+              </fieldset>
+              <br>
+              <input class="button" type="button" value="Create Multiplication Table">
+            </form>
+            <!-- Button -->
+            <!--<button id="center" type="button" onclick="createTable()">Create Multiplication Table</button>-->
+          </div>
+        </div>
+        </div>
+        <br> <br>
+        <div id="table">
+        </div>
+        <br><div id="tabs"><ul></ul></div>
+        <br><div id="rm"></div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="javascript/validate.js">
+        </script>
+        <script src="javascript/js01.js">    
+        </script>
+        <script src="javascript/slider.js">
+        </script>
+    </body>
+</html>
