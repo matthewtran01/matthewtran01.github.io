@@ -1,0 +1,62 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    color: #db0f2a;
+}
+/*styling for input forms*/
+.form {
+    border: dotted rgb(46, 161, 228) 1px;
+    padding: 5px;
+}
+
+/* room for error message */
+.form input {
+    margin: auto 20px auto 0;
+}
+
+/* customize table */
+table, th, td {
+    margin: auto;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+
+/*customize cells */
+th, td {
+    text-align: center;
+    width: 80px;
+    padding: 5px;
+    
+}
+/*make a scroll box for table*/
+#table{
+    overflow: auto; 
+    height: 500px;
+}
+/*styling header boxes*/
+th, td:nth-child(1) {
+    background-color: rgb(132, 53, 143);
+    color: #4cc72d;
+}
+/*styling button*/
+.button{
+    background-color: rgb(132, 53, 143);
+    color: #4cc72d;
+    padding:  20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+
+}
+/*styling checker pattern*/
+tr:nth-child(odd) td:nth-child(2n + 3), tr:nth-child(even) td:nth-child(2n + 2) {
+    background-color: rgb(29, 197, 79);
+}
+
