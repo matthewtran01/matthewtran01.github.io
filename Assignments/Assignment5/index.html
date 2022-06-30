@@ -1,0 +1,71 @@
+<!--
+Full Name: Matthew Tran
+E-mail: Matthew_tran@student.uml.edu
+School: U mass lowell
+Date: 6/29/22
+Description: This is the html file to create the interactables and information for the scrabble assignment
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- import css and js files, add scrabble title > -->
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="./styles/mystyle.css" />
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body> <!-- Title and info -->
+    <h1>Assignment 5: One-line Scrabble Board</h1>
+    <h3>Move the tiles from the rack to make words by dragging and dropping </h3>
+    <div id="center">
+      <div class="flex-around">
+        <!--game display that displays what the current words is, scores, and how many tiles left-->
+          <span>
+            <span>Word=</span>
+            <span id="word"></span>
+          </span>
+          <span>
+            <span>Score=</span>
+            <span id="score">0</span>
+          </span>
+          <span>
+            <span>High Score=</span>
+            <span id="highScore">0</span>
+          </span>
+          <span>
+            <span>Tiles left=</span>
+            <span id="tilesLeft"></span>
+          </span>
+      </div>
+       <!-- creates the rack to place the tiles on -->
+      <div class="flexCenter" id="board">
+            <div  id="board1" class="sqr"></div>
+            <div  id="board2" class="sqr"></div>
+            <div  id="board3" class="sqr"></div>
+            <div  id="board4" class="sqr"></div>
+            <div  id="board5" class="sqr"></div>
+            <div  id="board6" class="sqr"></div>
+            <div  id="board7" class="sqr"></div>
+      </div>
+      <hr />
+    </div>
+    <div class="tips">
+      <!-- small little tips for the players to play the game -->
+        <h3>Some tips to help play Scrabble!</h3>
+        <p> Make sure that the tiles make up one word with no spaces in between<img id="noSpaceIcon" src="./public/images/checkIcon.png" class="checkmark"  /> </p>
+        <p> Make sure that the word is made up of at least two letters.<img id="twoPlusIcon" src="./public/images/checkIcon.png" class="checkmark" /></p>
+      </div>
+
+      <!-- create buttons to move onto next word or restart -->
+    <div id="spaceReplace" class="none"></div>
+    <div style="text-align: center ;">
+        <button id="nextWordButton" onclick="nextWord()">Next Word </button>
+        <button id="restartButton" onclick="restart()">Restart</button>
+    </div>
+    <div class="tileOuterRack"> <div class="tileRack"></div> </div>
+</body>
+</html>

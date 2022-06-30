@@ -1,0 +1,140 @@
+/*
+Full Name: Matthew Tran
+E-mail: Matthew_tran@student.uml.edu
+School: U mass lowell
+Date: 6/29/22
+Description: This is the css file to add flairs and give the website a backbone and structure in the scrabble assignment
+*/
+body
+{
+    background-color: #5cb85c;
+}
+
+
+
+/* span styling */
+span 
+{
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+
+/* button styling to make it look nice*/
+button 
+{
+    color: #741515;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 30px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #f5cccc;
+}
+
+/* sizing for image */
+img 
+{
+    width: 50px;
+    height: 50px;
+}
+
+/* setting up squares on word rack */
+.sqr 
+{
+    background-image: url(../public/images/Scrabble_BlankSquare.jpg);
+    width: 85px;
+    height: 88px;
+    margin: 1px;
+    border-width: 1px;
+    
+}
+
+/* make board 2 and 6 double score */
+#board6, #board2 
+{
+    background-image: url(../public/images/Scrabble_DoubleWordScore.jpg);
+}
+
+/*creates flexcenter divider for word rack*/
+.flexCenter 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.tips 
+{
+        width: 620px;
+        margin: 0 auto;
+        padding-left: 20px;
+}
+
+.tips img 
+{
+    width: 20px;
+    height: 20px;
+}
+/*adjust tile racks*/
+.tileOuterRack 
+{
+        text-align: center;
+        background-image: url(../public/images/Scrabble_Tile_Holder.png);
+        background-repeat: no-repeat;
+        display: flex;
+        width: 615px;
+        height: 130px;
+        margin: 15px auto;
+        padding-left: 15px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.tileRack 
+{
+        height: 85px;
+}
+
+
+.checkmark 
+{
+    opacity: 0.0;
+}
+
+/*colors for dragging and placements*/
+.hoverHighlight
+{
+    box-shadow: 0 0 15px rgb(29, 29, 131);
+}
+
+.dragHighlight 
+{
+    box-shadow: 0 0 15px rgb(230, 219, 73);
+}
+
+.dragItem 
+{
+    width: 82px;
+    height: 90px;
+}
+
+.flex-around 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.none 
+{
+    display: none;
+}
+
+.center, h1, h3
+{
+    text-align: center;
+}
